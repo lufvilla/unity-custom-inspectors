@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Framework.SpellSystem;
 using SpellSystem;
 using UnityEngine;
 
@@ -14,8 +15,7 @@ namespace Entities
         public float RotationSpeed = 10;
         public int MaxSpirit = 100;
         public int StartingSpirit = 0;
-        public bool IgnoreDifficult = false;
-        public List<SpellDefinition> StartingSpells;
+        public List<Spell> StartingSpells;
         public EntityState State;
     }
 }

@@ -1,9 +1,7 @@
-﻿using BattleSystem;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace SpellSystem
 {
-    [CreateAssetMenu(menuName = "Game/Spells/Ability")]
     sealed public class SpellDefinition : ScriptableObject
     {
         [Header("UI")]
@@ -21,8 +19,6 @@ namespace SpellSystem
         [Header("Damage")]
         public int Damage;
         public int DamageMultiplier;
-        [EnumFlagsAttribute]
-        public DamageType DamageType = DamageType.Spell;
         
         [Header("Sounds")]
         public AudioClip CastSound;

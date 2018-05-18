@@ -3,14 +3,14 @@ using Entities;
 using UnityEditor;
 using UnityEngine;
 
-[CustomEditor(typeof(DynamicEntity), true)]
-public class DynamicEntityEditor : Editor
+[CustomEditor(typeof(Entity), true)]
+public class EntityEditor : Editor
 {
-    DynamicEntity tgt;
+    Entity tgt;
     
     public void OnEnable()
     {
-        tgt = target as DynamicEntity;
+        tgt = target as Entity;
     }
 
     public override void OnInspectorGUI()

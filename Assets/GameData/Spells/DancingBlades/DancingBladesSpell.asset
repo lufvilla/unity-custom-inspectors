@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc732c177269b41edb4e1d0f04a5127f, type: 3}
+  m_Name: DancingBladesSpell
+  m_EditorClassIdentifier: 
+  Name: Dancing Blades
+  Description: Cacatua
+  Requeriments:
+  - {fileID: 11400000, guid: 1795f53d89434422890dccfd622a92cc, type: 2}
+  - {fileID: 11400000, guid: ca00b4b97689d407094ca352605599dd, type: 2}

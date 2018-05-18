@@ -1,14 +1,27 @@
-﻿using BattleSystem;
+﻿using System.Linq;
+using Entities;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Entites
 {
-    public abstract class Entity : MonoBehaviour, IDamageable
+    public class Entity : MonoBehaviour
     {
-        public virtual void TakeDamage(int damage, DamageType type = DamageType.Unknown, Transform origin = null)
+        public EntityDefinition Definition;
+
+        private void Update()
         {
-            
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                var spell = Definition.StartingSpells.FirstOrDefault();
+
+                if (spell != null)
+                {
+                    spell.Cast(this);
+                }
+            }
+
+            EventsManager.TriggerEvent(GameEvents.UPDATE);
         }
     }
 }
-
